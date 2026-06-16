@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EgoSteer</title>
+    <script>
+      ;(() => {
+        const query = window.matchMedia('(prefers-color-scheme: dark)')
+        const isDark = query.matches
+        document.documentElement.classList.toggle('dark', isDark)
+        document.documentElement.dataset.theme = isDark ? 'dark' : 'light'
+      })()
+    </script>
+    <script type="module" crossorigin src="/assets/index-DC_bJLFG.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-ByGCN_N8.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
